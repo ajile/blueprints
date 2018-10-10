@@ -1,0 +1,22 @@
+{
+  "name": "blueprints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hercule src/blueprint.md -o apiary.apib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajile/blueprints.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajile/blueprints/issues"
+  },
+  "homepage": "https://github.com/ajile/blueprints#readme",
+  "dependencies": {
+    "hercule": "^4.1.1"
+  }
+}
