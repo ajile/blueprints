@@ -1,11 +1,3 @@
-FORMAT: 1A
-HOST: https://api.wheely.com/v6/
-
-# Спецификация API v6
-
-Спецификация на внутренюю API компании `v6`, которую использует большинство фронтенд приложений. Данная API позволяет получать и производить базовые операции над основными сущностями компании, такими как: `заказ`, `пользователь`, `водитель` и пр.
-
-
 ## Rate [/rates/all?locale={lang}]
 
 + Parameters
@@ -65,36 +57,3 @@ HOST: https://api.wheely.com/v6/
 
 + passenger: 3 (string)
 + baggage: 3 (string)
-
-# Group Словари
-
-## Способы обмена документами [/dicts/document-exchange-types]
-
-### Получение списка [GET]
-
-Возвращает список доступных способов обмена документами между Wheely и др. компаниями, вместе с локализацией.
-
-+ Response 200 (application/json)
-    + Attributes
-        + exchange_types (array[`DocumentExchangeType`], fixed)
-
-### Data Structures
-
-##### DocumentExchangeType (object)
-
-+ exchange_type: diadoc (string, required) - Уникальное имя способа обмена документами на латинице. Является идентификатором записи (вместо `id`).
-+ translations (array[`DocumentExchangeTypeName`], required) - Массив переводов.
-
-
-##### DocumentExchangeTypeName (object)
-
-+ locale: en (enum, required) - Код языка, в формате [ISO 639-1:2002](https://ru.wikipedia.org/wiki/ISO_639-1).
-    + Members
-        + ru
-        + en
-+ translation: Diadoc (string, required) - Название записи на языке, соотв. значению в поле `locale`.
-
-
-# Data Structures
-
-
