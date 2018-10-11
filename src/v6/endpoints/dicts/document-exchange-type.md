@@ -1,24 +1,23 @@
-# Group Словари
+## Document Exchange Type [/dicts/document-exchange-types]
 
-## Exchange Type [/dicts/exchange-types]
+### Список способов обмена документами [GET]
 
-### Получение «Способов обмена документами» [GET]
+Возвращает список доступных способов обмена документами между Wheely и др. компаниями, вместе с локализацией.
 
 + Response 200 (application/json)
 
     + Attributes
+        + exchange_types (array[DocumentExchangeType], fixed)
 
-        + exchange_types (array[ExchangeType], fixed)
+### Data Structures
 
-#### Data Structures
-
-##### ExchangeType (object)
+##### DocumentExchangeType (object)
 
 + slug: diadoc (string, required) - Уникальное имя способа обмена документами на латинице. Является идентификатором записи (вместо `id`).
-+ translations (array[ExchangeTypeName], required) - Массив переводов.
++ translations (array[DocumentExchangeTypeName], required) - Массив переводов.
 
 
-##### ExchangeTypeName (object)
+##### DocumentExchangeTypeName (object)
 
 + locale: en (enum, required) - Код языка, в формате [ISO 639-1:2002](https://ru.wikipedia.org/wiki/ISO_639-1).
     + Members

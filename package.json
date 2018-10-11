@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "hercule src/blueprint.md -o apiary.apib"
+    "transclude-v6": "hercule src/v6.md -o build/apiary-v6.apib"
   },
   "repository": {
     "type": "git",
