@@ -1,4 +1,4 @@
-## Способы обмена документами [/dicts/document-exchange-types]
+## Способы обмена документами [/company/document-exchange-types]
 
 ### Получение списка [GET]
 

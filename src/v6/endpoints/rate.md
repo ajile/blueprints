@@ -1,4 +1,4 @@
-## Rate [/rates/all?locale={lang}]
+## Тариф [/rates/all?locale={?lang}]
 
 + Parameters
     + lang: en (string, optional) - Код языка в формате [ISO 639-1:2002](https://ru.wikipedia.org/wiki/ISO_639-1).
@@ -8,7 +8,7 @@
 
 + Response 200 (application/json)
     + Attributes
-        + CITY_NAME
+        + *CITY_NAME*
             + currency_code: GBP (string, required)
             + minutes_before_cancellation_fee: 5 (number)
             + vendors (array[Vendor], required)
