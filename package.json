@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "transclude-v6": "hercule src/v6.md -o build/apiary-v6.apib"
+    "transclude": "./bin/transclude.sh",
+    "preview": "npm run transclude && apiary preview --path='build/v6.apib'",
+    "publish": "npm run transclude && apiary publish --api-name="
   },
   "repository": {
     "type": "git",
